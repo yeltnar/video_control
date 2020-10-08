@@ -13,7 +13,7 @@ socket.send = (...a)=>{
 };
 
 socket.onopen = function (e) {
-  console.log("asdf")
+  console.log("onopen")
 };
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      {video_url||"video_url"}
       <input type="text" value={video_url} onChange={x=>{setVideoUrl(x.target.value)}}></input>
       <button onClick={pause}>pause</button>
       <button onClick={play}>play</button>
