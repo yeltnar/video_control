@@ -58,11 +58,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" >
       {session_id||"session_id"}
       <input type="text" value={session_id} onChange={x=>{setVideoUrl(x.target.value)}}></input>
-      <button onClick={pause}>pause</button>
-      <button onClick={play}>play</button>
+      <button className="button" style={{height:"2rem"}} onClick={pause}>pause</button>
+      <button className="button" style={{height:"2rem"}} onClick={play}>play</button>
     </div>
   );
 }
