@@ -15,8 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"yarn build && cp build/* docs",
-    "deploy_push":"git add . && git commit -m 'build' && git push"
+    "deploy":"yarn build && cp -r build/* docs",
+    "deploy_push":"yarn deploy && git add . && git commit -m 'build' && git push"
   },
   "eslintConfig": {
     "extends": "react-app"
